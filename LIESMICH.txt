@@ -1,0 +1,44 @@
+EINSATZBERICHT SC KRIENS – App (Progressive Web App)
+=====================================================
+
+Was ist das?
+Die App läuft im Browser, lässt sich wie eine App auf Handy und PC installieren
+und funktioniert nach dem ersten Öffnen auch ohne Internet. Alle Berichte, Fotos
+und Anhänge bleiben nur auf dem jeweiligen Gerät (Browser-Speicher). Der Server
+liefert nur die App-Dateien aus und sieht keine Berichtsdaten.
+
+1. Veröffentlichen (einmalig)
+   Den ganzen Ordner (index.html, sw.js, manifest.webmanifest, vendor, fonts,
+   icons) auf einen Webspace mit HTTPS hochladen, z.B.:
+   - eigener Webspace, Unterordner wie https://www.ihre-domain.ch/einsatzbericht/
+   - Netlify (app.netlify.com/drop, Ordner hineinziehen, Konto nötig, damit die
+     Seite bestehen bleibt)
+   - GitHub Pages
+   Wichtig: HTTPS ist Pflicht. Direkt per Doppelklick (file://) geöffnet
+   funktionieren Installation und Offline-Betrieb nicht.
+
+2. Installieren
+   iPhone/iPad: Adresse in Safari öffnen -> Teilen -> „Zum Home-Bildschirm“.
+   Android: in Chrome öffnen -> Menü -> „App installieren“.
+   PC: in Edge/Chrome öffnen -> Installieren-Symbol in der Adressleiste.
+   Danach einmal öffnen, solange Internet da ist. Ab dann läuft sie offline.
+
+   iPhone: Die installierte App hat einen eigenen Speicher, getrennt von Safari.
+   Berichte immer in der installierten App erfassen.
+
+3. Bestehende Berichte übernehmen
+   In der bisherigen Version (claude.ai): Berichte -> „Sicherung exportieren“.
+   In der neuen App: Berichte -> „Sicherung importieren“ und die Datei wählen.
+
+4. Speichern von PDF/Word
+   Handy: Teilen-Menü öffnet sich -> „In Dateien sichern“ (z.B. OneDrive-Ordner).
+   PC: Download wie gewohnt (Edge/Chrome kann nach dem Speicherort fragen).
+
+5. Datensicherung
+   Die Daten liegen nur auf dem Gerät. Wird die App gelöscht oder der
+   Browserverlauf samt Websitedaten gelöscht, sind sie weg. Darum regelmässig
+   Berichte -> „Sicherung exportieren“ und die Datei ablegen.
+
+6. Updates
+   Geänderte Dateien einfach erneut hochladen. Die App zeigt beim nächsten
+   Öffnen „Neue Version verfügbar – Aktualisieren“. Daten bleiben erhalten.
